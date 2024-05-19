@@ -15,7 +15,17 @@ O pré-processamento de imagens tem como objetivo facilitar a visualização da 
 As informações da etapa de pré-processamento são incorporadas à imagem original como um novo conjunto de bandas, dando origem à imagem de 40 bandas. Após a adição dessas informações, a imagem passa por uma vetorização pixel a pixel, onde cada posição do vetor-imagem contém as novas bandas do pixel, gerando um vetor de formato (250.000, 40). A vetorização da imagem possibilita a utilização de múltiplos algoritmos de classificação. Para o estudo em questão, foram selecionados sete algoritmos: XGBoost, LightGBM, MLP Classifier, Random Forest, K-Means, Naive-Bayes e Logistic-regression.
 
 Para o conjunto de cinco imagens selecionadas, foram feitas classificações de favelas e aglomerados urbanos utilizando os sete algoritmos mencionados na seção anterior. A escolha dos melhores algoritmos foi feita a partir dos resultados médios para o F1-Score e IoU. Dos sete algoritmos de classificação inicialmente propostos, o XGBoost e Light GBM se destacam dos demais, pois demonstram uma aparente adequação à classificação correta quando comparados à máscara original. Apesar da classificação aparentemente similar entre os resultados obtidos com a aplicação destes algoritmos e a alta acurácia para quatro dos sete algoritmos propostos (Tabela 1), foi obtida melhor comparação real e identificação do desempenho ao observarmos as métricas F1-Score e IoU em conjunto da ilustração das predições para a máscara (Figura 3). Ao compararmos o F1-Score, podemos dividir os modelos em 3 grupos:
- -Performance melhor (acima de 40%): XGBoost, Light GBM, Naive Bayes
- -Performance intermediária (entre 30% e 40%): MLP Classifier, Random Forest
- -Performance pior (abaixo de 30%): K-Means, Logistic-regression
+- Performance melhor (acima de 40%): XGBoost, Light GBM, Naive Bayes
+- Performance intermediária (entre 30% e 40%): MLP Classifier, Random Forest
+- Performance pior (abaixo de 30%): K-Means, Logistic-regression
+
+| Model | Accurracy | Precision | Recall | F1-Score | IoU |
+|---|---|---|---|---|---|
+| XGBoost | 81.24% | 43.10% | 55.82% | 44.60% | 56.32% |
+| Light GBM | 81.68% | 43.88% | 52.44% | 43.64% | 56.02% |
+| MLP Classifier | 83.94% | 54.02% | 33.54% | 36.64% | 53.42% |
+| Random Forest | 69.32% | 36.54% | 64.96% | 37.30% | 54.87% |
+| Naive-Bayes | 70.60% | 34.16% | 75.18% | 42.54% | 49.71% |
+| K-Means | 44.92% | 19.58% | 48.7% | 23.22% | 48.53% |
+| Logistic-Regression | 83.06% | 42.72% | 18.34% | 23.44% | 41.27% |
 
