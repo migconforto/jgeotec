@@ -10,7 +10,7 @@ Por haver setores não selecionados no conjunto da amostra dentro das imagens es
 
 O pré-processamento de imagens tem como objetivo facilitar a visualização da imagem ou adequá-la para análises quantitativas através de correções de defeitos ou realces das regiões de interesse na imagem além do tratamento de dados quantitativos já realizado pelos modelos de aprendizado de máquina (GOMES, 2001). Nessa etapa foram implementadas seis técnicas de pré-processamento para extração de features em imagens: índice de forma espacial (KOENDERINK; VAN DOORN, 1992), superpixel de Felzenszwalb (FELZENSZWALB; HUTTENLOCHER, 2004), superpixel SLIC (ACHANTA et al., 2012), Padrão Binário Local (LBP) (OJALA; PIETIKAINEN; HARWOOD, 1994), Histograma de Gradientes Orientados (HOG) (DALAL; TRIGGS, 2005) e Matriz de Coocorrência de Níveis de Cinza (GLCM) (JIDE et al., 2020). A Figura 2 mostra como cada método foi implementado.
 
-![features](https://github.com/migconforto/jgeotec/blob/main/image/features.png)
+![features](https://github.com/migconforto/jgeotec/blob/main/image/features.jpg)
 
 As informações da etapa de pré-processamento são incorporadas à imagem original como um novo conjunto de bandas, dando origem à imagem de 40 bandas. Após a adição dessas informações, a imagem passa por uma vetorização pixel a pixel, onde cada posição do vetor-imagem contém as novas bandas do pixel, gerando um vetor de formato (250.000, 40). A vetorização da imagem possibilita a utilização de múltiplos algoritmos de classificação. Para o estudo em questão, foram selecionados sete algoritmos: XGBoost, LightGBM, MLP Classifier, Random Forest, K-Means, Naive-Bayes e Logistic-regression.
 
