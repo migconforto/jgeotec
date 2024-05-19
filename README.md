@@ -6,3 +6,4 @@ Para garantir o melhor resultado no estudo, utilizamos imagens de alta resoluç�
 
 Por haver setores não selecionados no conjunto da amostra dentro das imagens escolhidas, foi feito um recorte desses setores na leitura das imagens, a fim de não gerar um erro no treinamento dos algoritmos classificadores. A Figura 1 ilustra o processo de retirada dos setores não amostrados e sobreposição da máscara à imagem original para uma das imagens selecionadas. Na figura temos: a imagem de satélite original que foi selecionada, a máscara criada através do Quantum GIS, a imagem de satélite sem os setores classificados como aglomerados subnormais que não fazem parte da amostra e, por último, a sobreposição da máscara à imagem com os setores não selecionados removidos.
 
+![imagem de satélite e máscara](https://github.com/migconforto/jgeotec/blob/main/image/original_mascara.png)
