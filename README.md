@@ -29,3 +29,6 @@ Para o conjunto de cinco imagens selecionadas, foram feitas classificações de 
 | K-Means | 44.92% | 19.58% | 48.7% | 23.22% | 48.53% |
 | Logistic-Regression | 83.06% | 42.72% | 18.34% | 23.44% | 41.27% |
 
+![resultados](https://github.com/migconforto/jgeotec/blob/main/image/resultados.png)
+
+O código está disponível clicando [aqui]()
