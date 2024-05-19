@@ -31,4 +31,4 @@ Para o conjunto de cinco imagens selecionadas, foram feitas classificações de 
 
 ![resultados](https://github.com/migconforto/jgeotec/blob/main/image/resultados.png)
 
-O código está disponível clicando [aqui]()
+O código está disponível clicando [aqui](https://github.com/migconforto/jgeotec/blob/main/Roteiro_classificacao_jgeotec.ipynb)
